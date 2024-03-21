@@ -1,48 +1,40 @@
+import { NavLink } from "react-router-dom";
+
 const Navigation = () => {
   return (
     <nav className="navigation">
-      <ul>
-        <li className="navigtion__item active">
-          <a href="#">
-            Личные данные и навыки
-          </a>
-        </li>
-        <li className="navigtion__item">
-          <a href="#">
-            Опыт и образование
-          </a>
-        </li>
-        <li className="navigtion__item">
-          <a href="#">
-            Проекты
-          </a>
-        </li>
-        <li className="navigtion__item">
-          <a href="#">
-            Награды/Сертификаты
-          </a>
-        </li>
-        <li className="navigtion__item">
-          <a href="#">
-            Видео профиля
-          </a>
-        </li>
-        <li className="navigtion__item">
-          <a href="#">
-            Специализация
-          </a>
-        </li>
-        <li className="navigtion__item">
-          <a href="#">
-            Промышленный опыт
-          </a>
-        </li>
-        <li className="navigtion__item">
-          <a href="#">
-            Профиль Часто задаваемые вопросы
-          </a>
-        </li>
-      </ul>
+      <NavLink className="navigtion__item" to="/">
+        Личные данные и навыки
+      </NavLink>
+
+      <NavLink className="navigtion__item" to="/skils">
+        Опыт и образование
+      </NavLink>
+
+      <NavLink className="navigtion__item" to="/project">
+        Проекты
+      </NavLink>
+
+      <NavLink className="navigtion__item" to="/awards">
+        Награды/Сертификаты
+      </NavLink>
+
+      <NavLink className="navigtion__item" to="/video">
+        Видео профиля
+      </NavLink>
+
+      <NavLink className="navigtion__item" to="/specialization">
+        Специализация
+      </NavLink>
+
+      <NavLink className="navigtion__item" to="/experience">
+        Промышленный опыт
+      </NavLink>
+
+      <NavLink className="navigtion__item" to="/profile">
+        Профиль Часто задаваемые вопросы
+      </NavLink>
+
     </nav>
   );
 }

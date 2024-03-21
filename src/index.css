@@ -13,6 +13,10 @@ a{
 li{
   list-style: none;
 }
+h1{
+  color: #09F8FB;
+  margin-top: 100px;
+}
 h2{
   margin: 50px 0 50px;
   color: #09F8FB;
@@ -182,16 +186,24 @@ header{
   gap: 55px;
 }
 .navigation{
+  display: flex;
+  flex-direction: column;
   margin-top: 45px;
   width: 25%;
 }
 .navigtion__item{
   padding: 25px 0 25px 35px; 
+  background: transparent;
+  transition: all .3s ease;
 }
 .navigtion__item a{
   cursor: pointer;
 }
-.navigtion__item.active{
+
+.navigtion__item:hover{
+background: rgba(0, 0, 0, 0.1);
+}
+.active{
  background: rgba(0, 0, 0, 0.1);
  border-right: 3px solid #09F8FB;
 }
